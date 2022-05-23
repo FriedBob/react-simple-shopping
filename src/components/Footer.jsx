@@ -1,3 +1,9 @@
+const thisYear = new Date().getFullYear();
+
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <p>{`ⓒ ${thisYear} FriedBob. All rights reserved.`}</p>
+    </footer>
+  );
 }
