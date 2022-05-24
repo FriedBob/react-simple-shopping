@@ -3,6 +3,7 @@ import AppStateContext from "../contexts/AppStateContext";
 
 const AppStateProvider = ({ children }) => {
   const [orders, setOrders] = useState([]);
+
   const [prototypes] = useState([
     {
       id: "pp-01",
@@ -138,8 +139,23 @@ const AppStateProvider = ({ children }) => {
   ]);
 
   const addToOrder = useCallback((id) => {
-    console.log(id);
+    setOrders((orders) => {
+      const finded = orders.find((order) => order.id === id);
+
+      if (finded === undefined) {
+        return [...orders, { id, quantity: 1 }];
+      } else {
+        return orders.map((order) => {
+          if (order.id === id) {
+            return { id, quantity: order.quantity + 1 };
+          } else {
+            return order;
+          }
+        });
+      }
+    });
   }, []);
+
   const remove = useCallback((id) => {}, []);
   const removeAll = useCallback(() => {}, []);
 

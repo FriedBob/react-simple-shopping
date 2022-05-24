@@ -1,10 +1,19 @@
+import useOrders from "../hooks/useOrders";
+
 export default function Orders() {
-  return (
-    <aside>
-      <div className="empty">
-        <div className="title">You don't have any orders</div>
-        <div className="subtitle">Click on a + to add an order</div>
-      </div>
-    </aside>
-  );
+  const orders = useOrders();
+  console.log(orders);
+
+  if (orders.length === 0) {
+    return (
+      <aside>
+        <div className="empty">
+          <div className="title">You don't have any orders</div>
+          <div className="subtitle">Click on a + to add an order</div>
+        </div>
+      </aside>
+    );
+  }
+
+  return <aside>orders</aside>;
 }
