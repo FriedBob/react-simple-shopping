@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# <div style="font-size:3rem; text-align:center">Simple Shopping Catalogue</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React의 기본 기능을 이용하여 쇼핑 사이트 장바구니 시스템의 일부를 구현해본 데모 프로젝트
 
-## Available Scripts
+&nbsp;
 
-In the project directory, you can run:
+# <div style="text-align:center">📚 Stacks</div>
 
-### `npm start`
+<div style="text-align:center">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/javascirpt-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+&nbsp;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# <div style="text-align:center">🏫 Features</div>
 
-### `npm test`
+&nbsp;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 메뉴 장바구니 추가 및 삭제
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ <img src="public/catalogue.gif" width="600" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+&nbsp;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# <div style="text-align:center">⚽ Installation</div>
 
-### `npm run eject`
+Note: `package.json` 에 관련 dependency가 등록되어 있습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+&nbsp;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+터미널 상에서 다음 명령어를 입력하여 연관 패키지를 설치합니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+&nbsp;&nbsp;
 
-## Learn More
+# <div style="text-align:center">🖊️ Script</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 터미널 상에서 아래의 스크립트로 동작합니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+&nbsp;&nbsp;
 
-### Code Splitting
+## `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+브라우저를 열어 프로젝트를 실행시킵니다. <br/><br/>
+또는 명령어 입력 후 브라우저를 직접 열어 http://localhost:3000 주소에서 결과를 볼 수 있습니다.
 
-### Making a Progressive Web App
+&nbsp;&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## `npm build`
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm build
+```
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+프로젝트를 빌드합니다. <br/><br/>
+빌드 후 생성된 `build` 폴더는 배포 시 해당 폴더가 배포됩니다.
